@@ -1,0 +1,151 @@
+/**
+    Birthday Invite Styles
+*/
+
+/* Simple Reset */
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    position: relative;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2 {
+    font-size: 3em;
+    line-height: 0;
+    color: #2d0038;
+    padding-top:4rem;
+    text-shadow: .25rem .25rem 3px rgba(0,0,0,.31);
+}
+
+.h2:first-of-type {
+    font-family: "Rancho", Tofu;
+    font-size: 5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.h2:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
+.h2:last-of-type {
+    margin-top: 2.4rem;
+    margin-bottom: 1.7em;
+}
+
+.h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    margin-bottom: 3.4em;
+    color: #ffec46;
+    text-shadow: .25rem .25rem 3px rgba(0,0,0,.31);
+}
+
+.h3:first-of-type {
+    font-family: "Itim", sans-serif;
+    font-size: 3rem;
+    letter-spacing: .8px;
+    margin-top: -4rem;
+    margin-bottom: 4.5rem;
+}
+
+
+
+.invitation-container {
+    display: block;
+    background-color: #795f96;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.invitation-img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    drop-shadow: .25rem .25rem 3px rgba(0,0,0,.31);
+}
+
+ul {
+    /* width: 100%;
+    max-width: 100%; */
+    list-style-type: none;
+    text-align: left;
+    margin-top: -2.5rem;
+    margin-bottom: 3.7em;
+}
+
+li {
+    font-family: "Itim", sans-serif;
+    font-size: 2.5rem;
+    line-height: 4.2rem;
+    font-weight: 800;
+    text-shadow: .25rem .25rem 3px rgba(0,0,0,.31);
+}
+
+ul li span {
+    padding-right: .8rem;
+}
+
+iframe {
+    width: 80%;
+    height: 25rem;
+    margin-bottom: 4rem;
+}
+
+/* Background overlay */
+.background-container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    z-index: 1   
+}
+
+.background-component {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(9, 1fr);
+    min-width: 1px;
+    min-height: 1px;
+    gap: 0;
+}
+
+.space,
+.emoji {
+    min-width: 2rem;
+    min-height: 2rem;
+}
